@@ -1,6 +1,5 @@
 const element = <h1 className="greeting">Hello world!</h1>
 
-ReactDOM.render(
-  element,
-  document.getElementById('root')
-);
+const container = document.getElementById('root');
+const root = ReactDOM.createRoot(container);
+root.render(element);

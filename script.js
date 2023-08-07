@@ -4,4 +4,6 @@ var element = React.createElement(
   "Hello world!"
 );
 
-ReactDOM.render(element, document.getElementById('root'));
+var container = document.getElementById('root');
+var root = ReactDOM.createRoot(container);
+root.render(element);
